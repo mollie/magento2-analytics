@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="checkout_submit_all_after">
+        <observer name="mollie_analytics_save_cookie" instance="Mollie\Analytics\Observer\CheckoutSubmitAllAfter\SaveAnalyticsCookieValue"/>
+    </event>
+
+    <event name="mollie_checkout_success_redirect">
+        <observer name="mollie_analytics_add_clientid_to_success_url" instance="Mollie\Analytics\Observer\MollieCheckoutSuccessRedirect\AddClientIdToSuccessUrl" />
+    </event>
+</config>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Mollie\Analytics\Api\AnalyticsRepositoryInterface" type="Mollie\Analytics\Model\AnalyticsRepository" />
+    <preference for="Mollie\Analytics\Api\Data\AnalyticsInterface" type="Mollie\Analytics\Model\Analytics" />
+
+    <type name="Mollie\Payment\Service\Order\BuildTransaction">
+        <arguments>
+            <argument name="parts">
+                <item name="AddClientIdToRedirectUrl" xsi:type="object">Mollie\Analytics\Service\Order\TransactionPart\AddClientIdToRedirectUrl</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
