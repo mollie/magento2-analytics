@@ -39,6 +39,8 @@ When enabled, this module will extract the client ID from the Google Analytics c
 ```javascript
 const urlParams = new URLSearchParams(window.location.search);
 const clientId = urlParams.get('clientId');
+
+console.log('Receive client id:', clientId);
 ```
 
 Another way to retrieve the ID is by using the repository:
