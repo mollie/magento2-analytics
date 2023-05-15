@@ -45,7 +45,7 @@ class AnalyticsRepository implements AnalyticsRepositoryInterface
     {
         $analytics = $this->analyticsFactory->create();
         $this->resource->load($analytics, $id);
-        if (!$analytics->getId()) {
+        if (!$analytics->getEntityId()) {
             throw new NoSuchEntityException(__('Analytics with id "%1" does not exist.', $id));
         }
 
@@ -56,7 +56,7 @@ class AnalyticsRepository implements AnalyticsRepositoryInterface
     {
         $analytics = $this->analyticsFactory->create();
         $this->resource->load($analytics, $cartId, 'cart_id');
-        if (!$analytics->getId()) {
+        if (!$analytics->getEntityId()) {
             throw new NoSuchEntityException(__('Analytics with cartId "%1" does not exist.', $cartId));
         }
 
