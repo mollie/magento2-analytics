@@ -33,13 +33,9 @@ class AddClientIdToSuccessUrl implements ObserverInterface
 
         /** @var DataObject $redirect */
         $redirect = $observer->getData('redirect');
-        $path = $redirect->getData('path');
+        $query = $redirect->getData('query');
+        $query['clientId'] = $clientId;
 
-        $append = '?clientId=' . $clientId;
-        if (strstr($path, '?') !== false) {
-            $append = '&clientId=' . $clientId;
-        }
-
-        $redirect->setData('path', $path . $append);
+        $redirect->setData('query', $query);
     }
 }
