@@ -2,7 +2,7 @@
   "name": "mollie/magento2-analytics",
   "description": "Mollie Payment Analytics Module for Magento 2",
   "require": {
-    "mollie/magento2": "*",
+    "mollie/magento2": ">=2.26.0",
     "php": ">=7.4"
   },
   "type": "magento2-module",
