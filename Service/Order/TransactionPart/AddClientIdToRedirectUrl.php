@@ -45,13 +45,8 @@ class AddClientIdToRedirectUrl implements TransactionPartInterface
     {
         $parts = explode('.', $cookie);
 
-        if ($parts) {
-            array_shift($parts);
-        }
-
-        if ($parts) {
-            array_shift($parts);
-        }
+        array_shift($parts);
+        array_shift($parts);
 
         return implode('.', $parts);
     }
