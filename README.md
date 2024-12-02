@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="https://info.mollie.com/hubfs/github/magento-2/logo.png" width="128" height="128"/>
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/24823946/391594022-225da08c-b094-4fe1-880d-52c5373a79e1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241202%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241202T145956Z&X-Amz-Expires=300&X-Amz-Signature=c3f1e5ec72e43377b7fdd581bf967780a899045ec5838222f7fd58736e479e8a&X-Amz-SignedHeaders=host" />
+  
 </p>
 
 # Mollie Analytics Addon for Magento 2.3.x and higher
